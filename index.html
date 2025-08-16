@@ -6,6 +6,41 @@
     <title>Viget Vuong - Mechanical Engineering Student</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Delius&family=DM+Serif+Text&display=swap" rel="stylesheet">
     <style>
+        .nav-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-30px);
+            transition: opacity 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1), background 0.5s;
+            box-shadow: 0 8px 32px rgba(75,0,0,0.13);
+            z-index: 2000;
+        }
+        .nav-popup.visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+        .nav-popup.invisible {
+            opacity: 0 !important;
+            pointer-events: none !important;
+            transform: translateY(-30px) !important;
+        }
+        .nav-popup .container {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        .nav-popup.blend {
+            background: #4B0000 !important;
+        }
+        .nav-popup:not(.blend) {
+            background: var(--secondary-color) !important;
+        }
+        nav.original-nav {
+            display: none;
+        }
         :root {
             --primary-color: #800000; /* Maroon */
             --secondary-color: #b22222; /* Firebrick (lighter maroon) */
@@ -192,7 +227,7 @@
             display: block;
             position: relative;
             z-index: 10;
-            filter: brightness(1.18) grayscale(0.08);
+            filter: brightness(1) grayscale(0.08);
         }
         .spin-image.shadow1 {
             position: absolute;
@@ -289,7 +324,15 @@
 </head>
 <body>
 
-    <nav style="position: relative; z-index: 100;">
+    <nav class="original-nav" style="position: relative; z-index: 100;">
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects & Activities</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <nav id="nav-popup" class="nav-popup">
         <div class="container">
             <a href="#about">About</a>
             <a href="#projects">Projects & Activities</a>
@@ -309,8 +352,8 @@
     <header>
         <div class="container">
             <h1>Viget Vuong</h1>
-            <p>Mechanical Engineering Student | UC Riverside</p>
-            <p>Passionate about origami, race cars, SolidWorks, table tennis, running, and French horn.</p>
+            <p>Mechanical Engineering Student | UC Rave</p>
+            <p>Passionate about origami, SolidWorks, doomscrolling brainrot, roblox (before schlep), and running.</p>
         </div>
     </header>
 
@@ -445,5 +488,36 @@
         </div>
     </footer>
 
+<script>
+// Navigation popup logic
+const navPopup = document.getElementById('nav-popup');
+const heroSection = document.getElementById('hero-maroon');
+let ticking = false;
+function handleNavPopup() {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    if (scrollY <= 2) {
+        navPopup.classList.add('visible');
+        navPopup.classList.remove('blend', 'invisible');
+    } else if (scrollY < heroBottom - 60) {
+        navPopup.classList.add('visible', 'blend');
+        navPopup.classList.remove('invisible');
+    } else {
+        navPopup.classList.remove('visible', 'blend');
+        navPopup.classList.add('invisible');
+    }
+}
+window.addEventListener('scroll', function() {
+    if (!ticking) {
+        window.requestAnimationFrame(function() {
+            handleNavPopup();
+            ticking = false;
+        });
+        ticking = true;
+    }
+});
+// On load
+handleNavPopup();
+</script>
 </body>
 </html>
