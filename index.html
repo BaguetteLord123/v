@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Mechanical Engineering Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #004E98;
+            --secondary-color: #FF6B35;
+            --accent-color: #B2EBF2;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --card-bg: #fff;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.8;
+        }
+
+        nav {
+            background: var(--secondary-color);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-item {
+            background: var(--accent-color);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .project {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .project h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            display: inline-block;
+            background: var(--secondary-color);
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-link:hover {
+            background-color: #c94f29;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Mechanical Engineering Student | University Name</p>
+            <p>Passionate about [Your Area of Interest, e.g., robotics, sustainable energy, mechatronics].</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>Hello! I'm [Your Name], a senior at [Your University] pursuing a Bachelor of Science in Mechanical Engineering. My coursework has provided a strong foundation in thermodynamics, fluid mechanics, and material science, and I am particularly interested in applying these principles to create innovative solutions.</p>
+                <p>Throughout my studies, I've developed hands-on experience through various projects and internships. I am a quick learner and a dedicated team player, always eager to take on new challenges and expand my technical skills. When I'm not in the lab or studying, you can find me [mention a hobby or interest, e.g., 3D printing, tinkering with electronics, hiking].</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="card-grid">
+                <div class="card project">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+1+Image" alt="Image of Project 1">
+                    <h4>Project Title 1</h4>
+                    <p>A brief, one-to-two sentence description of the project. Mention the goal, key technologies used, and your specific role. For example: "Designed and prototyped a solar-powered water purification system for my senior design class, focusing on efficiency and cost-effectiveness."</p>
+                    <a href="#" class="project-link">View Project Details</a>
+                </div>
+
+                <div class="card project">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+2+Image" alt="Image of Project 2">
+                    <h4>Project Title 2</h4>
+                    <p>Another brief project description. For example: "Developed a robotic arm for a mechatronics competition, utilizing CAD software for design and Arduino for programming control systems."</p>
+                    <a href="#" class="project-link">View Project Details</a>
+                </div>
+
+                <div class="card project">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+3+Image" alt="Image of Project 3">
+                    <h4>Project Title 3</h4>
+                    <p>One more project description. For example: "Conducted a CFD analysis of an airfoil using ANSYS Fluent to optimize lift-to-drag ratio for a club project."</p>
+                    <a href="#" class="project-link">View Project Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <ul class="skills-list">
+                    <li class="skill-item">SolidWorks</li>
+                    <li class="skill-item">AutoCAD</li>
+                    <li class="skill-item">ANSYS</li>
+                    <li class="skill-item">MATLAB</li>
+                    <li class="skill-item">Python</li>
+                    <li class="skill-item">Arduino</li>
+                    <li class="skill-item">3D Printing</li>
+                    <li class="skill-item">CFD</li>
+                    <li class="skill-item">Finite Element Analysis (FEA)</li>
+                </ul>
+            </div>
+            <div class="card" style="margin-top: 20px;">
+                <h3>Soft Skills</h3>
+                <ul class="skills-list">
+                    <li class="skill-item">Problem-Solving</li>
+                    <li class="skill-item">Teamwork</li>
+                    <li class="skill-item">Project Management</li>
+                    <li class="skill-item">Technical Writing</li>
+                    <li class="skill-item">Communication</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p>Feel free to connect with me to discuss projects, opportunities, or anything related to mechanical engineering!</p>
+                <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+                <p>GitHub: <a href="https://github.com/yourprofile" target="_blank">github.com/yourprofile</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
