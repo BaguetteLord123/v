@@ -187,6 +187,15 @@
             font-weight: bold;
         }
 
+        .spin-image {
+            animation: spin 3s linear infinite;
+            display: block;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         footer {
             background: var(--primary-color);
             color: #fff;
@@ -235,6 +244,9 @@
 
     <section id="about" class="section">
         <div class="container">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <img src="image.png" alt="Viget Vuong" class="spin-image" style="width:180px; height:180px; margin-bottom: 24px;" />
+            </div>
             <h2>About Me</h2>
             <div class="card">
                 <p>Hello! I'm Viget Vuong, an incoming freshman at UC Riverside pursuing a Bachelor of Science in Mechanical Engineering. I'm excited to begin my journey exploring the fundamentals of engineering, from thermodynamics to material science, and to apply these principles in creative ways.</p>
@@ -248,35 +260,19 @@
             <h2>Projects & Activities Timeline</h2>
             <div class="timeline">
                 <div class="timeline-event">
-                    <div class="timeline-date">2019</div>
+                    <div class="timeline-date">2025</div>
                     <div class="timeline-content">
-                        <h4>Started Origami Exploration</h4>
-                        <p>Began folding origami models, learning basic and intermediate techniques, and exploring the intersection of art and engineering.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=Origami+2019" alt="Origami 2019">
+                        <h4>Started at UC Riverside</h4>
+                        <p>Began undergraduate studies in Mechanical Engineering at UC Riverside, eager to join engineering clubs and participate in hands-on projects.</p>
+                        <img src="https://via.placeholder.com/220x140.png?text=UCR+2025" alt="UC Riverside 2025">
                     </div>
                 </div>
                 <div class="timeline-event">
-                    <div class="timeline-date">2020</div>
+                    <div class="timeline-date">2024</div>
                     <div class="timeline-content">
-                        <h4>Table Tennis Club Member</h4>
-                        <p>Joined the local table tennis club, participated in friendly matches, and improved hand-eye coordination and teamwork skills.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=Table+Tennis+2020" alt="Table Tennis 2020">
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content">
-                        <h4>French Horn Performance</h4>
-                        <p>Performed with the school band as a French horn player, developing musicality and discipline through regular practice and concerts.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=French+Horn+2021" alt="French Horn 2021">
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content">
-                        <h4>Race Car CAD Model</h4>
-                        <p>Created a detailed race car model in SolidWorks, learning about aerodynamics and mechanical components. Explored how CAD tools are used in motorsports engineering.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=Race+Car+2022" alt="Race Car 2022">
+                        <h4>French Horn Mechanics Exploration</h4>
+                        <p>Investigated the mechanical design of the French horn, analyzing how valves and tubing affect sound production and instrument ergonomics.</p>
+                        <img src="https://via.placeholder.com/220x140.png?text=French+Horn+Mechanics+2024" alt="French Horn Mechanics 2024">
                         <a href="#" class="project-link">View Project Details</a>
                     </div>
                 </div>
@@ -290,20 +286,36 @@
                     </div>
                 </div>
                 <div class="timeline-event">
-                    <div class="timeline-date">2024</div>
+                    <div class="timeline-date">2022</div>
                     <div class="timeline-content">
-                        <h4>French Horn Mechanics Exploration</h4>
-                        <p>Investigated the mechanical design of the French horn, analyzing how valves and tubing affect sound production and instrument ergonomics.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=French+Horn+Mechanics+2024" alt="French Horn Mechanics 2024">
+                        <h4>Race Car CAD Model</h4>
+                        <p>Created a detailed race car model in SolidWorks, learning about aerodynamics and mechanical components. Explored how CAD tools are used in motorsports engineering.</p>
+                        <img src="https://via.placeholder.com/220x140.png?text=Race+Car+2022" alt="Race Car 2022">
                         <a href="#" class="project-link">View Project Details</a>
                     </div>
                 </div>
                 <div class="timeline-event">
-                    <div class="timeline-date">2025</div>
+                    <div class="timeline-date">2021</div>
                     <div class="timeline-content">
-                        <h4>Started at UC Riverside</h4>
-                        <p>Began undergraduate studies in Mechanical Engineering at UC Riverside, eager to join engineering clubs and participate in hands-on projects.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=UCR+2025" alt="UC Riverside 2025">
+                        <h4>French Horn Performance</h4>
+                        <p>Performed with the school band as a French horn player, developing musicality and discipline through regular practice and concerts.</p>
+                        <img src="https://via.placeholder.com/220x140.png?text=French+Horn+2021" alt="French Horn 2021">
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <h4>Table Tennis Club Member</h4>
+                        <p>Joined the local table tennis club, participated in friendly matches, and improved hand-eye coordination and teamwork skills.</p>
+                        <img src="https://via.placeholder.com/220x140.png?text=Table+Tennis+2020" alt="Table Tennis 2020">
+                    </div>
+                </div>
+                <div class="timeline-event">
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <h4>Started Origami Exploration</h4>
+                        <p>Began folding origami models, learning basic and intermediate techniques, and exploring the intersection of art and engineering.</p>
+                        <img src="https://via.placeholder.com/220x140.png?text=Origami+2019" alt="Origami 2019">
                     </div>
                 </div>
             </div>
