@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viget Vuong - Mechanical Engineering Student</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Delius&family=DM+Serif+Text&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #800000; /* Maroon */
@@ -188,9 +188,73 @@
         }
 
         .spin-image {
-            animation: spin 3s linear infinite;
+            animation: spin 14s linear infinite;
             display: block;
+            position: relative;
+            z-index: 10;
+            filter: brightness(1.18) grayscale(0.08);
         }
+        .spin-image.shadow1 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            opacity: 0.45;
+            filter: brightness(2.2) sepia(0.2) saturate(2) hue-rotate(-10deg) blur(0.3px);
+            animation: spin 14s linear infinite;
+            animation-delay: 0.1s;
+        }
+        .spin-image.shadow2 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            opacity: 0.35;
+            filter: brightness(2.7) sepia(0.15) saturate(2.2) hue-rotate(-10deg) blur(0.25px);
+            animation: spin 14s linear infinite;
+            animation-delay: 0.2s;
+        }
+        .spin-image.shadow3 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 3;
+            opacity: 0.28;
+            filter: brightness(3.0) sepia(0.12) saturate(2.1) hue-rotate(-10deg) blur(0.2px);
+            animation: spin 14s linear infinite;
+            animation-delay: 0.3s;
+        }
+        .spin-image.shadow4 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 4;
+            opacity: 0.22;
+            filter: brightness(3.3) sepia(0.10) saturate(2.0) hue-rotate(-10deg) blur(0.15px);
+            animation: spin 14s linear infinite;
+            animation-delay: 0.4s;
+        }
+        .spin-image.shadow5 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 5;
+            opacity: 0.16;
+            filter: brightness(3.6) sepia(0.08) saturate(1.9) hue-rotate(-10deg) blur(0.1px);
+            animation: spin 14s linear infinite;
+            animation-delay: 0.5s;
+        }
+        .spin-image.shadow6 {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 6;
+            opacity: 0.12;
+            filter: brightness(3.9) sepia(0.06) saturate(1.8) hue-rotate(-10deg) blur(0.05px);
+            animation: spin 14s linear infinite;
+            animation-delay: 0.6s;
+        }
+        
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
@@ -225,15 +289,7 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Viget Vuong</h1>
-            <p>Mechanical Engineering Student | UC Riverside</p>
-            <p>Passionate about origami, race cars, SolidWorks, table tennis, running, and French horn.</p>
-        </div>
-    </header>
-
-    <nav>
+    <nav style="position: relative; z-index: 100;">
         <div class="container">
             <a href="#about">About</a>
             <a href="#projects">Projects & Activities</a>
@@ -242,10 +298,32 @@
         </div>
     </nav>
 
+    <section id="hero-maroon" style="width: 100vw; height: 100vh; min-height: 500px; background: #4B0000; display: flex; align-items: center; justify-content: center;">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <span style="color: #fff; font-family: 'DM Serif Text', serif, Arial, sans-serif; font-size: 2.5rem; font-weight: normal; letter-spacing: normal; text-shadow: none; filter: none;">Viget</span>
+            <span style="margin-top: 0.5rem; color: #f8eaea; font-family: 'DM Serif Text', serif, Arial, sans-serif; font-size: 1.15rem; font-style: italic; letter-spacing: 0.04em;">Florere, valere, aut vigorem habere</span>
+            <span style="margin-top: 0.2rem; color: #e0bfbf; font-family: 'Roboto', serif, Arial, sans-serif; font-size: 0.98rem; font-style: normal; letter-spacing: 0.01em;">To flourish, to be strong, or to have vigor</span>
+        </div>
+    </section>
+
+    <header>
+        <div class="container">
+            <h1>Viget Vuong</h1>
+            <p>Mechanical Engineering Student | UC Riverside</p>
+            <p>Passionate about origami, race cars, SolidWorks, table tennis, running, and French horn.</p>
+        </div>
+    </header>
+
     <section id="about" class="section">
         <div class="container">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <img src="image.png" alt="Viget Vuong" class="spin-image" style="width:180px; height:180px; margin-bottom: 24px;" />
+            <div style="display: flex; flex-direction: column; align-items: center; position: relative; width: 320px; height: 320px; margin: 0 auto 24px auto;">
+                <img src="image.png" alt="shadow1" class="spin-image shadow1" style="width:320px; height:320px;" />
+                <img src="image.png" alt="shadow2" class="spin-image shadow2" style="width:320px; height:320px;" />
+                <img src="image.png" alt="shadow3" class="spin-image shadow3" style="width:320px; height:320px;" />
+                <img src="image.png" alt="shadow4" class="spin-image shadow4" style="width:320px; height:320px;" />
+                <img src="image.png" alt="shadow5" class="spin-image shadow5" style="width:320px; height:320px;" />
+                <img src="image.png" alt="shadow6" class="spin-image shadow6" style="width:320px; height:320px;" />
+                <img src="image.png" alt="Viget Vuong" class="spin-image" style="width:320px; height:320px;" />
             </div>
             <h2>About Me</h2>
             <div class="card">
