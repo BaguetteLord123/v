@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viget Vuong - Mechanical Engineering Student</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Delius&family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Delius&family=DM+Serif+Text&family=Tinos:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .nav-popup {
             position: fixed;
@@ -223,12 +223,14 @@
         }
 
         .spin-image {
-            animation: spin 14s linear infinite;
+            /* animation removed for JS-driven spin */
             display: block;
             position: relative;
             z-index: 10;
             filter: brightness(1) grayscale(0.08);
+            will-change: transform;
         }
+        
         .spin-image.shadow1 {
             position: absolute;
             left: 0;
@@ -236,8 +238,6 @@
             z-index: 1;
             opacity: 0.45;
             filter: brightness(2.2) sepia(0.2) saturate(2) hue-rotate(-10deg) blur(0.3px);
-            animation: spin 14s linear infinite;
-            animation-delay: 0.1s;
         }
         .spin-image.shadow2 {
             position: absolute;
@@ -246,8 +246,6 @@
             z-index: 2;
             opacity: 0.35;
             filter: brightness(2.7) sepia(0.15) saturate(2.2) hue-rotate(-10deg) blur(0.25px);
-            animation: spin 14s linear infinite;
-            animation-delay: 0.2s;
         }
         .spin-image.shadow3 {
             position: absolute;
@@ -256,8 +254,6 @@
             z-index: 3;
             opacity: 0.28;
             filter: brightness(3.0) sepia(0.12) saturate(2.1) hue-rotate(-10deg) blur(0.2px);
-            animation: spin 14s linear infinite;
-            animation-delay: 0.3s;
         }
         .spin-image.shadow4 {
             position: absolute;
@@ -266,8 +262,6 @@
             z-index: 4;
             opacity: 0.22;
             filter: brightness(3.3) sepia(0.10) saturate(2.0) hue-rotate(-10deg) blur(0.15px);
-            animation: spin 14s linear infinite;
-            animation-delay: 0.4s;
         }
         .spin-image.shadow5 {
             position: absolute;
@@ -276,8 +270,6 @@
             z-index: 5;
             opacity: 0.16;
             filter: brightness(3.6) sepia(0.08) saturate(1.9) hue-rotate(-10deg) blur(0.1px);
-            animation: spin 14s linear infinite;
-            animation-delay: 0.5s;
         }
         .spin-image.shadow6 {
             position: absolute;
@@ -286,13 +278,6 @@
             z-index: 6;
             opacity: 0.12;
             filter: brightness(3.9) sepia(0.06) saturate(1.8) hue-rotate(-10deg) blur(0.05px);
-            animation: spin 14s linear infinite;
-            animation-delay: 0.6s;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
         }
 
         footer {
@@ -349,13 +334,6 @@
         </div>
     </section>
 
-    <header>
-        <div class="container">
-            <h1>Viget Vuong</h1>
-            <p>Mechanical Engineering Student | UC Rave</p>
-            <p>Passionate about origami, SolidWorks, doomscrolling brainrot, roblox (before schlep), and running.</p>
-        </div>
-    </header>
 
     <section id="about" class="section">
         <div class="container">
@@ -368,80 +346,20 @@
                 <img src="image.png" alt="shadow6" class="spin-image shadow6" style="width:320px; height:320px;" />
                 <img src="image.png" alt="Viget Vuong" class="spin-image" style="width:320px; height:320px;" />
             </div>
-            <h2>About Me</h2>
-            <div class="card">
-                <p>Hello! I'm Viget Vuong, an incoming freshman at UC Riverside pursuing a Bachelor of Science in Mechanical Engineering. I'm excited to begin my journey exploring the fundamentals of engineering, from thermodynamics to material science, and to apply these principles in creative ways.</p>
-                <p>I'm especially interested in origami, race cars, and design with SolidWorks. I love hands-on projects and am eager to join clubs and competitions at UCR. Outside of academics, I enjoy playing table tennis, running, and performing on the French horn. I'm always looking for new challenges and opportunities to learn and grow!</p>
+            <div style="margin-top: 40px; margin-left: 0; text-align: left;">
+                                <div style="display: flex; align-items: stretch; gap: 48px; margin-top: 12px; width: 100%; max-width: 1100px; min-height: 340px;">
+                                    <div style="flex: 1 1 0; display: flex; flex-direction: column; justify-content: center;">
+                                        <span style="font-family: 'Tinos', serif; font-size: 3.3rem; font-weight: bold; color: #2d1a1a; display: inline-block; margin-bottom: 18px;">viget vuong</span>
+                                        <p style="font-size: 1.5rem; font-family: 'Noto Sans', Arial, sans-serif; margin: 0; line-height: 1.5;">Hi! Throughout my life, I carried origami everywhere. That one tutorial I watched on NHK in Japan became a source for my creativity. I innovated countless origami tessellations in high school, and I thought, why not use my creativity to solve real-world problems? That's when I knew I wanted to become a Mechanical Engineer, starting at UCR.</p>
+                                    </div>
+                                    <div style="flex: 1 1 0; display: flex; align-items: center; justify-content: center;">
+                                        <img src="Vigetphoto.png" alt="Viget Vuong" style="max-width: 340px; width: auto; height: auto; box-shadow: 0 4px 24px rgba(128,0,0,0.13); background: #fff;" />
+                                    </div>
+                                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section">
-        <div class="timeline-container">
-            <h2>Projects & Activities Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-event">
-                    <div class="timeline-date">2025</div>
-                    <div class="timeline-content">
-                        <h4>Started at UC Riverside</h4>
-                        <p>Began undergraduate studies in Mechanical Engineering at UC Riverside, eager to join engineering clubs and participate in hands-on projects.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=UCR+2025" alt="UC Riverside 2025">
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h4>French Horn Mechanics Exploration</h4>
-                        <p>Investigated the mechanical design of the French horn, analyzing how valves and tubing affect sound production and instrument ergonomics.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=French+Horn+Mechanics+2024" alt="French Horn Mechanics 2024">
-                        <a href="#" class="project-link">View Project Details</a>
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h4>Origami-Inspired Structures</h4>
-                        <p>Designed and folded complex origami models to explore structural engineering concepts, focusing on how folding patterns can inspire innovative mechanical designs.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=Origami+Structures+2023" alt="Origami Structures 2023">
-                        <a href="#" class="project-link">View Project Details</a>
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content">
-                        <h4>Race Car CAD Model</h4>
-                        <p>Created a detailed race car model in SolidWorks, learning about aerodynamics and mechanical components. Explored how CAD tools are used in motorsports engineering.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=Race+Car+2022" alt="Race Car 2022">
-                        <a href="#" class="project-link">View Project Details</a>
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content">
-                        <h4>French Horn Performance</h4>
-                        <p>Performed with the school band as a French horn player, developing musicality and discipline through regular practice and concerts.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=French+Horn+2021" alt="French Horn 2021">
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2020</div>
-                    <div class="timeline-content">
-                        <h4>Table Tennis Club Member</h4>
-                        <p>Joined the local table tennis club, participated in friendly matches, and improved hand-eye coordination and teamwork skills.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=Table+Tennis+2020" alt="Table Tennis 2020">
-                    </div>
-                </div>
-                <div class="timeline-event">
-                    <div class="timeline-date">2019</div>
-                    <div class="timeline-content">
-                        <h4>Started Origami Exploration</h4>
-                        <p>Began folding origami models, learning basic and intermediate techniques, and exploring the intersection of art and engineering.</p>
-                        <img src="https://via.placeholder.com/220x140.png?text=Origami+2019" alt="Origami 2019">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section id="skills" class="section">
         <div class="container">
@@ -496,6 +414,15 @@ let ticking = false;
 function handleNavPopup() {
     const scrollY = window.scrollY || window.pageYOffset;
     const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
+    const aboutSection = document.getElementById('about');
+    const navRect = navPopup.getBoundingClientRect();
+    const aboutRect = aboutSection.getBoundingClientRect();
+    // If nav bottom touches or passes the about section top, hide popup
+    if (navRect.bottom >= aboutRect.top) {
+        navPopup.classList.remove('visible', 'blend');
+        navPopup.classList.add('invisible');
+        return;
+    }
     if (scrollY <= 2) {
         navPopup.classList.add('visible');
         navPopup.classList.remove('blend', 'invisible');
@@ -511,6 +438,7 @@ window.addEventListener('scroll', function() {
     if (!ticking) {
         window.requestAnimationFrame(function() {
             handleNavPopup();
+            handleSpinScroll();
             ticking = false;
         });
         ticking = true;
@@ -518,6 +446,60 @@ window.addEventListener('scroll', function() {
 });
 // On load
 handleNavPopup();
+
+// JS-driven smooth spinning effect
+const spinImages = document.querySelectorAll('.spin-image');
+const baseDuration = 14; // seconds for one full rotation at rest
+const minDuration = 1.2; // much faster minimum duration
+const maxBoost = 15; // more speed boost
+let lastScrollY = window.scrollY || window.pageYOffset;
+let lastTimestamp = performance.now();
+let spinTimeout;
+let spinSpeed = 1 / baseDuration; // rotations per second
+let targetSpeed = spinSpeed;
+let currentAngle = 0;
+let lastFrameTime = performance.now();
+
+function handleSpinScroll() {
+    const now = performance.now();
+    const scrollY = window.scrollY || window.pageYOffset;
+    const deltaY = Math.abs(scrollY - lastScrollY);
+    // Linear mapping for speed boost
+    let boost = Math.min(maxBoost, deltaY * (maxBoost / 120)); // 120px scroll = max boost
+    let newDuration = baseDuration - boost;
+    newDuration = Math.max(minDuration, Math.min(baseDuration, newDuration));
+    targetSpeed = 1 / newDuration;
+    // After 400ms of no scroll, return to normal
+    clearTimeout(spinTimeout);
+    spinTimeout = setTimeout(() => {
+        targetSpeed = 1 / baseDuration;
+    }, 150);
+    lastScrollY = scrollY;
+    lastTimestamp = now;
+}
+
+function animateSpin() {
+    const now = performance.now();
+    const dt = (now - lastFrameTime) / 1000; // seconds
+    // Smoothly interpolate spinSpeed toward targetSpeed (slower decline)
+    let lerpRate = (targetSpeed < spinSpeed) ? 0.035 : 0.12; // slower when slowing down
+    spinSpeed += (targetSpeed - spinSpeed) * lerpRate;
+    currentAngle = (currentAngle + 360 * spinSpeed * dt) % 360;
+    // Each shadow gets a slight delay
+    spinImages.forEach((img, i) => {
+        let angle = currentAngle;
+        if (img.classList.contains('shadow1')) angle -= 5;
+        if (img.classList.contains('shadow2')) angle -= 10;
+        if (img.classList.contains('shadow3')) angle -= 15;
+        if (img.classList.contains('shadow4')) angle -= 20;
+        if (img.classList.contains('shadow5')) angle -= 25;
+        if (img.classList.contains('shadow6')) angle -= 30;
+        img.style.transform = `rotate(${angle}deg)`;
+    });
+    lastFrameTime = now;
+    requestAnimationFrame(animateSpin);
+}
+animateSpin();
 </script>
 </body>
 </html>
