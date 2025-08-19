@@ -6,6 +6,10 @@
     <title>Viget Vuong - Mechanical Engineering Student</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Delius&family=DM+Serif+Text&family=Tinos:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        html, body {
+            overflow-x: hidden;
+            max-width: 100vw;
+        }
         .nav-popup {
             position: fixed;
             top: 0;
@@ -102,6 +106,8 @@
 
         .section {
             padding: 60px 0;
+            max-width: 100vw;
+            overflow-x: hidden;
         }
 
         .section h2 {
@@ -313,7 +319,7 @@
         <div class="container">
             <a href="#about">About</a>
             <a href="#projects">Projects & Activities</a>
-            <a href="#skills">Skills</a>
+            <a href="#solidworks">SolidWorks</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -321,7 +327,7 @@
         <div class="container">
             <a href="#about">About</a>
             <a href="#projects">Projects & Activities</a>
-            <a href="#skills">Skills</a>
+            <a href="#solidworks">SolidWorks</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -343,7 +349,7 @@
                         <p style="font-size: 1.25rem; font-family: 'Noto Sans', Arial, sans-serif; margin: 0; line-height: 1.5; margin-bottom: 1em;">Hi! Throughout my life, I carried origami everywhere. Watching origami YouTube tutorials and experimenting became a source for my creativity.</p>
                         <p style="font-size: 1.25rem; font-family: 'Noto Sans', Arial, sans-serif; margin: 0; line-height: 1.5;">I innovated countless origami tessellations in high school, and I thought, why not use my creativity to solve real-world problems? That's when I knew I wanted to become a Mechanical Engineer, starting at UCR.</p>
                     </div>
-                    <img src="Vigetphoto.png" alt="Viget Vuong" style="position: absolute; top: 0; right: -50px; max-width: 340px; height: auto; box-shadow: 0 4px 24px rgba(128,0,0,0.13); background: #fff;" />
+                    <img src="Vigetphoto.png" alt="Viget Vuong" style="position: absolute; top: 0; right: -50px; max-width: 340px; height: auto;" />
                 </div>
             </div>
             <!-- Custom Title/Description Section -->
@@ -355,14 +361,23 @@
                 <!--<div style="width: 100%; max-width: 900px; margin: 48px 0px 0px 0px; text-align: left;">
                     <h2 style="font-size: 2.1rem; font-family: 'Noto Sans', Arial, sans-serif; font-weight: 600; color: #490505; margin-bottom: 0px; text-align: left;">[Future Project Title]</h2>
                     <p style="font-size: 1.18rem; font-family: 'Noto Sans', Arial, sans-serif; color: #6d3232; margin: 0;">[Future project description goes here]</p>-->
-            <div style="width: 100%; max-width: 900px; margin: 400px 0px 0px 0px; text-align: left;">
-                    <h2 style="font-size: 2.1rem; font-family: 'Noto Sans', Arial, sans-serif; font-weight: 600; color: #490505; margin-bottom: 0px; text-align: left;">my skills</h2>
-                <p style="font-size: 1.18rem; font-family: 'Noto Sans', Arial, sans-serif; color: #6d3232; margin: 0;">very helpful</p>
+            <div style="width: 100%; max-width: 900px; margin: 400px 0px 0px 0px; text-align: center;">
+                <div style="display: flex; justify-content: center; align-items: center; width: 80vw;">
+                    <hr style="border: none; border-top: 2px solid #800000; height: 0; margin: 64px 0 64px 0; width: 90vw;" />
+                </div>
+                    <h2 style="font-size: 2.1rem; font-family: 'Noto Sans', Arial, sans-serif; font-weight: 600; color: #490505; margin-bottom: 0px; text-align: left;">SolidWorks</h2>
+                <p style="font-size: 1.18rem; font-family: 'Noto Sans', Arial, sans-serif; color: #6d3232; margin: 0; text-align: left;">side-projects</p>
                 </div>
                 <!-- Future Skills Section (same format) -->
-                <div style="width: 100%; max-width: 900px; margin: 48px 0px 0px 0px; text-align: left;">
-                    <h2 style="font-size: 2.1rem; font-family: 'Noto Sans', Arial, sans-serif; font-weight: 600; color: #490505; margin-bottom: 0px; text-align: left;">SolidWorks</h2>
-                    <p style="font-size: 1.18rem; font-family: 'Noto Sans', Arial, sans-serif; color: #6d3232; margin: 0;">[Future skill description goes here]</p>
+                <div id="solidworks" style="width: 100vw; min-height: 60vh; background: #fdf6f6; display: flex; flex-direction: column; align-items: left; justify-content: left; margin: 0; padding: 64px 0 64px 0;">
+                    <div style="padding-right: 500px;">
+                        <div style="width: 100%; max-width: 900px; text-align: left; position: relative; min-height: 0px; width: 100%; max-width: 1100px; margin-top: 12px;"></div>
+                            <h2 style="font-size: 2.1rem; font-family: 'Noto Sans', Arial, sans-serif; font-weight: 600; color: #490505; margin-bottom: 0px; text-align: left;">Cabinet Support</h2>
+                            <p style="font-size: 1.18rem; font-family: 'Noto Sans', Arial, sans-serif; color: #6d3232; margin: 0; padding-right: 500px;">With the Bambu Lab A1 mini, I created a custom support pin to hold up a cabinet shelf by utilizing basic 3D modeling (e.g. extruded boss/base and cut). I measured the tolerance using a measurement tape to find the dimensions (4.5in x 1.5in x 1in).</p>
+                        </div>
+                    </div>
+                    <img src="CabinetSupportPNGs/IMG_6652.png" alt="Cabinet Support" style="max-width: 20%; height: auto;" />
+                </div>
             </div>
         </div>
     </section>
