@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research | Viget Vuong</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.js" defer></script>
+</head>
+<body class="research-page">
+    <header class="site-header">
+        <div class="header-inner">
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html" aria-current="page">Research</a></li>
+                    <li><a href="current.html">Current</a></li>
+                </ul>
+            </nav>
+
+            <div class="contact-menu">
+                <button class="menu-button" id="contact-toggle" type="button" aria-expanded="false" aria-controls="contact-dropdown" aria-label="Open contacts menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="contact-dropdown" id="contact-dropdown" hidden>
+                    <a class="contact-link" href="contacts.html">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-section">
+            <div class="section-inner">
+                <h1 class="research-heading">Research</h1>
+                <p class="research-description">Research Lab (TBD) & Senior Design Projects</p>
+
+                <!--
+                Research template:
+                <article class="research-item" style="--research-main-image-width: 300px;">
+                    <div class="research-image">
+                        <img src="PATH/TO/IMAGE.png" alt="Research image">
+                    </div>
+
+                    <div class="research-content">
+                        <h3 class="research-title">[title]</h3>
+                        <p class="research-meta"><strong>Engineering:</strong> [ABC]</p>
+                        <p class="research-time">[Time]</p>
+                        <p class="research-item-description">[ description ]</p>
+                    </div>
+
+                    <div class="research-gallery">
+                        <img src="PATH/TO/IMAGE.png" alt="[ research image ]" style="--research-image-width: 120px;">
+                        <img src="PATH/TO/IMAGE.png" alt="[ research image ]" style="--research-image-width: 120px;">
+                        <img src="PATH/TO/IMAGE.png" alt="[ research image ]" style="--research-image-width: 120px;">
+                    </div>
+                </article>
+                -->
+                <div class="research-list">
+                    <!-- Duplicate this template item when you want to add another research entry. -->
+                    <article class="research-item" style="--research-main-image-width: 500px;">
+                        <div class="research-image">
+                            <img src="GNSSPNGs/IMG_4482 (1).jpg" alt="Image of Senior Design Project">
+                        </div>
+
+                        <div class="research-content">
+                            <h3 class="research-title">Global Navigation Satellite System (GNSS)</h3>
+                            <p class="research-meta"><strong>Engineering:</strong> SolidWorks, Python, ROS2. Design, Electromechanical</p>
+                            <p class="research-time">September 2025 - Present</p>
+                            <p class="research-item-description">2-quarter senior design project on Multi-Agent Mobile Robots with Quantum (Laser) Communication. Led the design and development of the Global Navigation Satellite System (GNSS) enclosure to integrate precise positioning system for the mobile robots, in collaboration with a senior design teammate responsible for all GNSS implementation. Currently working on tracking robot kinematics (position, velocity, etc.) from 60+ satellites, then utilizing the GNSS data to calculate relative positions. System built using Raspberry Pi 5, u-blox ZED-F9T GNSS receiver module, antenna, etc. </p>
+                        </div>
+
+                        <div class="research-gallery">
+                            <img src="GNSSPNGs/IMG_7490.png" alt="Image of Senior Design Project" style="--research-image-width: 400px;">
+                            <img src="GNSSPNGs/Screenshot 2026-03-26 012906.png" alt="Image of Senior Design Project" style="--research-image-width: 550px;">
+                            <img src="GNSSPNGs/IMG_4481.jpg" alt="Image of Senior Design Project" style="--research-image-width: 400px;">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

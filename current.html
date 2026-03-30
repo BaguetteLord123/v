@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current | Viget Vuong</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.js" defer></script>
+</head>
+<body class="current-page">
+    <header class="site-header">
+        <div class="header-inner">
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="current.html" aria-current="page">Current</a></li>
+                </ul>
+            </nav>
+
+            <div class="contact-menu">
+                <button class="menu-button" id="contact-toggle" type="button" aria-expanded="false" aria-controls="contact-dropdown" aria-label="Open contacts menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="contact-dropdown" id="contact-dropdown" hidden>
+                    <a class="contact-link" href="contacts.html">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-section">
+            <div class="section-inner">
+                <h1 class="current-heading">Current</h1>
+                <p class="current-description">Current work and updates</p>
+
+                <!--
+                Current template:
+                <article class="current-item" style="--current-main-image-width: 300px;">
+                    <div class="current-image">
+                        <img src="PATH/TO/IMAGE.png" alt="Current image">
+                    </div>
+
+                    <div class="current-content">
+                        <h3 class="current-title">[title]</h3>
+                        <p class="current-meta"><strong>Engineering:</strong> [ABC]</p>
+                        <p class="current-time">[Time]</p>
+                        <p class="current-item-description">[ description ]</p>
+                    </div>
+
+                    <div class="current-gallery">
+                        <img src="PATH/TO/IMAGE.png" alt="[ current image ]" style="--current-image-width: 120px;">
+                        <img src="PATH/TO/IMAGE.png" alt="[ current image ]" style="--current-image-width: 120px;">
+                        <img src="PATH/TO/IMAGE.png" alt="[ current image ]" style="--current-image-width: 120px;">
+                    </div>
+                </article>
+                -->
+
+                <div class="current-list">
+                    <!-- Duplicate this template item when you want to add another current update. -->
+                    <article class="current-item" style="--current-main-image-width: 500px;">
+                        <div class="current-image">
+                            <img src="3DPrintedOrigamiPNGs/IMG_7633.png" alt="3D Printed Origami Annotated">
+                        </div>
+
+                        <div class="current-content">
+                            <h3 class="current-title">Origami Design Applications on Flexible vs. Brittle Materials</h3>
+                            <p class="current-meta"><strong>Engineering:</strong> SolidWorks, 3D Printing</p>
+                            <p class="current-time">March 2026 - Present</p>
+                            <p class="current-item-description">Tested multiple origami waterbomb designs with brittle PLA material (Overture Rock PLA) to solve strain and flex issues. Though the Rock PLA is used for aesthetic purposes popular in startups, I plan to utilize Overture's Super PLA+ in the future because of its superior durability in applications like robotics. I also plan to integrate self-folding mechanisms, heavily inspired by <a class="current-inline-link" href="https://www.eurekalert.org/news-releases/992946" target="_blank" rel="noopener noreferrer">Tokyo University's multi-material design that self-folds underwater.</a></p>
+                        </div>
+
+                        <div class="current-gallery">
+                            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w_3Xgj3NPBg?si=QV5be1U8uOawb5rL&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <img src="3DPrintedOrigamiPNGs/Screenshot 2026-03-30 103240.png" alt="3D Printed Origami Unannotated" style="--current-image-width: 500px;">
+                            <img src="3DPrintedOrigamiPNGs/Screenshot 2026-03-30 103735.png" alt="3D Printed Origami Unannotated" style="--current-image-width: 500px;">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

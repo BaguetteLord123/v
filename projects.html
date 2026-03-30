@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Viget Vuong</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.js" defer></script>
+</head>
+<body class="projects-page">
+    <header class="site-header">
+        <div class="header-inner">
+            <nav class="main-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="current.html">Current</a></li>
+                </ul>
+            </nav>
+
+            <div class="contact-menu">
+                <button class="menu-button" id="contact-toggle" type="button" aria-expanded="false" aria-controls="contact-dropdown" aria-label="Open contacts menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="contact-dropdown" id="contact-dropdown" hidden>
+                    <a class="contact-link" href="contacts.html">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <section class="page-section">
+            <div class="section-inner">
+                <h1 class="projects-heading">Projects</h1>
+                <p class="projects-description">Ongoing Projects</p>
+                <div class="projects-list">
+                    <!-- Duplicate this template item when you want to add another additional project. -->
+                    <article class="projects-item" style="--projects-main-image-width: 500px;">
+                        <div class="projects-image">
+                            <img src="SOARM101PNGs/SO101_Follower.webp" alt="SOARM101 Follower;">
+                        </div>
+                        <div class="projects-content">
+                            <h3 class="projects-title">SO-ARM 101</h3>
+                            <p class="projects-meta"><strong>Engineering:</strong> Robotics, Machine Learning</p>
+                            <p class="projects-time">March 2026 - Present</p>
+                            <p class="projects-item-description">Currently assembling the follower arm and developing imitation learning using ROS2, PyTorch, and OpenCV.</p>
+                        </div>
+                        <div class="projects-gallery">
+                            <img src="SOARM101PNGs/SO101_Leader.webp" alt="SOARM101 Leader" style="--projects-image-width: 500px;">
+                        </div>
+                    </article>
+                </div>
+
+                <h2 class="projects-heading projects-additional-heading">Additional Projects</h2>
+                <p class="projects-description">Past projects</p>
+                <h3 class="projects-subsection-heading">Vehicle Dynamics FSAE projects</h3>
+
+                <!--
+                Additional Projects template:
+                <article class="projects-item" style="--projects-main-image-width: 300px;">
+                    <div class="projects-image">[ image ]</div>
+
+                    <div class="projects-content">
+                        <h3 class="projects-title">[title]</h3>
+                        <p class="projects-meta"><strong>Engineering:</strong> [ABC]</p>
+                        <p class="projects-time">[Time]</p>
+                        <p class="projects-item-description">[ description ]</p>
+                    </div>
+
+                    <div class="projects-gallery">
+                        <img src="PATH/TO/IMAGE.png" alt="[ additional image ]" style="--projects-image-width: 120px;">
+                        <img src="PATH/TO/IMAGE.png" alt="[ additional image ]" style="--projects-image-width: 120px;">
+                        <img src="PATH/TO/IMAGE.png" alt="[ additional image ]" style="--projects-image-width: 120px;">
+                    </div>
+                </article>
+                -->
+                <div class="projects-list">
+                    <!-- Duplicate this template item when you want to add another additional project. -->
+                    <article class="projects-item" style="--projects-main-image-width: 500px;">
+                        <div class="projects-image">
+                            <img src="HighlanderRacing/QuarterCarModelPNGs/Screenshot 2026-03-29 215126.png" alt="Displacement Graph of Quarter Car Model">
+                        </div>
+                        <div class="projects-content">
+                            <h3 class="projects-title">Quarter Car Model</h3>
+                            <p class="projects-meta"><strong>Engineering:</strong> MATLAB, Physics, Differential Equations</p>
+                            <p class="projects-time">September - October 2025</p>
+                            <p class="projects-item-description">Developed a 2-DOF representation of a vehicle's suspension system that tracks the kinematics of the sprung (body) and the unsprung (wheels and axels). The equations of the sprung and the unsprung masses were heavily useful for the ME018A final exam. Planning to expand this project by creating a 4-DOF model, where the rear and the front wheels are considered.</p>
+                        </div>
+                        <div class="projects-gallery">
+                            <img src="HighlanderRacing/QuarterCarModelPNGs/Vehicle Dynamics.png" alt="Notes on Quarter Car Model" style="--projects-image-width: 1300px;">
+                        </div>
+                    </article>
+                    <article class="projects-item" style="--projects-main-image-width: 500px;">
+                        <div class="projects-image">
+                            <img src="HighlanderRacing/AccelEventPNGs/Screenshot 2026-03-30 094707.png" alt="Kinematics Graph of Acceleration Event">
+                        </div>
+                        <div class="projects-content">
+                            <h3 class="projects-title">Acceleration Event Analysis</h3>
+                            <p class="projects-meta"><strong>Engineering:</strong> MATLAB, Physics</p>
+                            <p class="projects-time">November - December 2025</p>
+                            <p class="projects-item-description">Analyzed the kinematics of an accelerating FSAE racecar with real vehicle parameters. Considered additional factors such as load transfer, traction, and aerodynamic drag.</p>
+                        </div>
+                        <div class="projects-gallery">
+                            <img src="HighlanderRacing/AccelEventPNGs/AccelEvent.png" alt="Acceleration Event Notes" style="--projects-image-width: 1300px;">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
