@@ -402,6 +402,14 @@ button {
     text-align: left;
 }
 
+.current-body-text {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.35;
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
 .current-inline-link {
     color: #2563eb;
     text-decoration: underline;
