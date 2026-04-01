@@ -302,6 +302,21 @@ button {
     margin-top: 56px;
 }
 
+.current-date-section {
+    width: 100%;
+}
+
+.current-date-section + .current-date-section {
+    margin-top: 56px;
+}
+
+.current-date-heading {
+    margin: 0 0 24px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text-strong);
+}
+
 .projects-subsection-heading {
     margin: 0 0 20px;
     font-size: 1.15rem;
