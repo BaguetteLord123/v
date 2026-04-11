@@ -432,8 +432,7 @@ button {
 }
 
 .projects-time,
-.research-time,
-.current-time {
+.research-time {
     margin: 0;
     font-size: 1.2rem;
     text-align: left;
@@ -468,6 +467,15 @@ button {
     max-width: 100%;
     height: auto;
     flex: 0 0 auto;
+}
+
+.projects-gallery video {
+    width: var(--projects-image-width, 120px);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    flex: 0 0 auto;
+    background: #000000;
 }
 
 .research-content {
@@ -516,6 +524,15 @@ button {
     max-width: 100%;
     height: auto;
     flex: 0 0 auto;
+}
+
+.current-gallery video {
+    width: var(--current-image-width, 120px);
+    max-width: 100%;
+    height: auto;
+    display: block;
+    flex: 0 0 auto;
+    background: #000000;
 }
 
 .current-gallery iframe {
